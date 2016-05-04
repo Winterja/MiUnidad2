@@ -1,23 +1,39 @@
 <!DOCTYPE html>
-<html lang="es">
+
+<html lang="en" ng-app="LoginFormModule">
 <head>
     <meta charset="UTF-8">
-    <title>Unidad 2</title>
+    <title>MI UNIDAD 2</title>
 
-
+    <link href="../../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../share/main.css" rel="stylesheet">
 
 </head>
 <body>
-
-    <!--Generamos barra de navegación con Bootstrap. -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
-            ​
-        </div>
-        ​
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">
+                    Primer Form + AngularJs
+                </a>
+            </div>
+        </div>​
     </nav>
 
-    <script href="../../bootstrap/dist/css/bootstrap.min.css"></script>
+    <div class="container main-content">
+    <form name="theForm">
+        <div class="form-group">
+            <label for="name">Tu nombre: </label>
+
+            <input  type="text"
+                    class="form-control"
+                    id="name">
+        </div>
+    </form>
+    </div>
+
+    <script src="../../bower_components/bootstrap/dist/css/bootstrap.min.css"></script>
+    <script src="../controller/FormValidationController.js"></script>
 
 </body>
 </html>
