@@ -3,7 +3,7 @@
  */
 
 //GENERACIÓN DE MODULO 
- var app = angularModule('LoginFormModule',[]);
+ var app = angular.module('LoginFormModule',[]);
 //(nombre del módulo,arreglo de dependencias)
 
 app.controller('LoginFormController', function ($scope, $http){
