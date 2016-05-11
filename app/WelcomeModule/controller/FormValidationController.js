@@ -7,11 +7,14 @@
 //(nombre del módulo,arreglo de dependencias)
 
 app.controller('LoginFormController', function ($scope, $http){
-    $scope.formModel = {  };
+    
+    //se inicializa un objeto
+    $scope.formModel = { };
 
     //FUNCION QUE LLAMA AL SUBMIT
+    //designar un property
     $scope.onSubmit = function () {
-        console.log("Se llegó");
+        console.log("Suceso");
         console.log($scope.formModel);
     };
 });
